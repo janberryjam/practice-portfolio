@@ -1,0 +1,62 @@
+/*
+	Syntax for CSS
+	selector {
+		property; value;
+	}
+*/
+/*Universal Selector (the one in dot)*/
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: #000000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1, p {
+font-family: "Montserrat", sans-serif;
+}
+
+/*ID Selector (pound sign)*/
+#library_profile {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+}
+
+p {
+	color: gray;
+}
+
+footer {
+	background-color: black;
+	display: flex;
+	/*Centers your elements horizontally*/
+	justify-content: center;
+	/*Centers your elements vertically*/
+	align-items: center;
+	/*Space between your elements and its border*/
+	padding: 10px;
+}
+
+/*Class Selector*/
+.fa-otter, .fa-facebook, .fa-square-instagram, .fa-linkedin {
+	font-size: 25px;
+	color: white;
+	margin: 0 10px 0 10 px;
+}
+
+.fa-otter:hover, .fa-facebook:hover, .fa-square-instagram:hover, .fa-linkedin:hover {
+	color: gray;
+}
+
+#landing {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
